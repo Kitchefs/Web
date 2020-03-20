@@ -6,6 +6,11 @@ padding-left: 0px;
 font-family: "Jost", "Futura", "Noto", "Ubuntu", sans-serif;
 }
 
+.brand {
+  float: left;
+  border: none;
+}
+
 .Search-Box {
   border-radius: 20px;
   outline: none;
