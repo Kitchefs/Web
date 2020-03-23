@@ -16,6 +16,10 @@ a {
     margin: 0;
 }
 
+.header {
+    background: grey !important;
+}
+
 .carousel-inner img {
     width: 100%;
     height: 500px !important;
