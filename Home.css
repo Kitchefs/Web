@@ -13,8 +13,8 @@ a {
 }
 
 .stay {
-    position: fixed;
-    z-index: 1;
+    position: fixed !important;
+    z-index: 1 !important;
 }
 
 .desc p {
