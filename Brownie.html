@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://indestructibletype.com/fonts/Jost.css" type="text/css" charset="utf-8" />
+    <script defer src="./Main.js"></script>
     <link rel="stylesheet" href="./Home.css" type="text/css">
     <title>Brownies</title>
 </head>
@@ -43,7 +44,7 @@
             <li>Mix in Eggs and Vanilla Extract, until just combined.</li>
             <li>On low speed beat in Coca Powder, Flour, Salt and Baking Powder until smooth.</li>
             <li>Cook for 25-30 minutes. Leave to cool.</li>
-            <li><button onclick="Timer()">Start Timer</button></li>
+            <li><button onclick="Timer25()">Start Timer</button></li>
         </ol>
         <div class="countdown">
             <h1 class="header">TIMER PRESS START</h1>
@@ -63,35 +64,6 @@
             <li>Very Usefull Tip</li>
         </ul>
     </div>
-    <script>
-        function Timer() {
-            var counter = {};
-            window.addEventListener("load", function () {
-
-                counter.end = 1500;
-
-                counter.min = document.getElementById("cd-min");
-                counter.sec = document.getElementById("cd-sec");
-
-                if (counter.end > 0) {
-                    counter.ticker = setInterval(function () {
-                        counter.end--;
-                        if (counter.end <= 0) {
-                            clearInterval(counter.ticker);
-                            counter.end = 0;
-                        }
-
-                        var secs = counter.end;
-                        var mins = Math.floor(secs / 60);
-                        secs -= mins * 60;
-
-                        counter.min.innerHTML = mins;
-                        counter.sec.innerHTML = secs;
-                    }, 1000);
-                }
-            });
-        }
-    </script>
 </body>
 <footer>The End Of The Recipie - Created by Dillon Hunt 2020</footer>
 
