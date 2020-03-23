@@ -18,3 +18,7 @@ function SearchRecipie() {
         }
     }
 }
+
+$('.carousel').carousel({
+    interval: 2000
+  })
