@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://indestructibletype.com/fonts/Jost.css" type="text/css" charset="utf-8" />
     <script defer src="./Main.js"></script>
+    <link rel="stylesheet" href="./odometer-theme-default.css" />
+    <script src="./odometer.min.js"></script>
     <link rel="stylesheet" href="./Home.css" type="text/css">
     <title>Brownies</title>
 </head>
@@ -49,12 +51,12 @@
         <div class="countdown">
             <h1 class="header">TIMER PRESS START</h1>
             <div class="square">
-              <div class="digits" id="cd-min">25</div>
+              <div class="digits odometer" id="cd-min">25</div>
               <span id="cd-duration" style="display: none;">25</span>
               <div class="text">MINUTES</div>
             </div>
             <div class="square">
-              <div class="digits" id="cd-sec">00</div>
+              <div class="digits odometer" id="cd-sec">0</div>
               <div class="text">SECONDS</div>
             </div>
           </div>

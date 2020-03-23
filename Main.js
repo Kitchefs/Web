@@ -24,7 +24,7 @@ let ticker;
 
 function ResetTimer() {
     clearInterval(ticker)
-    time = duration;
+    time = duration/60;
     document.getElementById("cd-min").innerHTML = time;
     document.getElementById("cd-sec").innerHTML = 0;
 }
