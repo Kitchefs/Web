@@ -42,7 +42,20 @@
             <li>Roll the dough into a log, starting from one end cut into 2cm slices.</li>
             <li>Place side up on  tray and sprinkle with leftover Cheese.</li>
             <li>Bake for 15-20 minutes, Leave to cool.</li>
+            <li><button onclick="CookTimer()">Start Timer</button></li>
         </ol>
+        <div class="countdown">
+            <h1 class="header">TIMER PRESS START</h1>
+            <div class="square">
+              <div class="digits" id="cd-min">25</div>
+              <span id="cd-duration" style="display: none;">25</span>
+              <div class="text">MINUTES</div>
+            </div>
+            <div class="square">
+              <div class="digits" id="cd-sec">00</div>
+              <div class="text">SECONDS</div>
+            </div>
+          </div>
     </div>
     <div class="tips">
         <h3>Tips:</h3>
@@ -50,36 +63,7 @@
                 <li>Very Usefull Tip</li>
             </ul>
     </div>
-    <script>
-        function Timer25() {
-        var counter = {};
-        window.addEventListener("load", function () {
 
-        counter.end = 1500;
-
-        counter.min = document.getElementById("cd-min");
-        counter.sec = document.getElementById("cd-sec");
-
-        if (counter.end > 0) {
-            counter.ticker = setInterval(function () {
-                counter.end--;
-                if (counter.end <= 0) {
-                    clearInterval(counter.ticker);
-                    counter.end = 0;
-                }
-
-                var secs = counter.end;
-                var mins = Math.floor(secs / 60);
-                secs -= mins * 60;
-
-                counter.min.innerHTML = mins;
-                counter.sec.innerHTML = secs;
-            }, 1000);
-        }
-    });
-    }
-
-    </script>
 </body>
 <footer>The End Of The Recipie - Created by Dillon Hunt 2020</footer>
 </html>
