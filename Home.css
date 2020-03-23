@@ -29,7 +29,6 @@ a {
 .countdown {
     margin: 0 auto !important;
     max-width: 350px !important;
-    background: #000 !important;
     font-family: Impact, Charcoal, sans-serif !important;
     text-align: center !important; 
   }
