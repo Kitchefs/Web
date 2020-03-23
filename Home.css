@@ -12,6 +12,11 @@ a {
     color: inherit;
 }
 
+.alert {
+    position: fixed;
+    z-index: 1;
+}
+
 .desc p {
     margin: 0;
 }
