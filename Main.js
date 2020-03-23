@@ -19,30 +19,4 @@ function SearchRecipie() {
     }
 }
 
-function Timer25() {
-    var counter = {};
-    window.addEventListener("load", function () {
-
-        counter.end = 1500;
-
-        counter.min = document.getElementById("cd-min");
-        counter.sec = document.getElementById("cd-sec");
-
-        if (counter.end > 0) {
-            counter.ticker = setInterval(function () {
-                counter.end--;
-                if (counter.end <= 0) {
-                    clearInterval(counter.ticker);
-                    counter.end = 0;
-                }
-
-                var secs = counter.end;
-                var mins = Math.floor(secs / 60);
-                secs -= mins * 60;
-
-                counter.min.innerHTML = mins;
-                counter.sec.innerHTML = secs;
-            }, 1000);
-        }
-    });
 }
