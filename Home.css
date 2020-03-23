@@ -2,7 +2,7 @@ body {
     background: #3f3f3f !important;
     color: #ffffff;
     text-align: left;
-    padding-top: 5px;
+    padding-top: 1px !important;
     font-family: "Jost", "Futura", "Noto", "Ubuntu", sans-serif;
 }
 
