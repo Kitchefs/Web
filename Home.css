@@ -17,6 +17,7 @@ a {
 }
 
 .top {
+    z-index: 1000;
     float: top;
     width: 100%;
     height: 100%;
