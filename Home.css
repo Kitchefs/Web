@@ -1,6 +1,5 @@
 body {
-    background-color: black;
-    background: black;
+    background: black !important;
     color: #ffffff;
     text-align: left;
     padding-top: 100px;
