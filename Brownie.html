@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,13 +8,44 @@
     <link rel="stylesheet" href="./Home.css" type="text/css">
     <title>Brownies</title>
 </head>
+
 <body>
+    <script>
+        function Timer() {
+            var counter = {};
+            window.addEventListener("load", function () {
+
+                counter.end = 1500;
+
+                counter.min = document.getElementById("cd-min");
+                counter.sec = document.getElementById("cd-sec");
+
+                if (counter.end > 0) {
+                    counter.ticker = setInterval(function () {
+                        counter.end--;
+                        if (counter.end <= 0) {
+                            clearInterval(counter.ticker);
+                            counter.end = 0;
+                        }
+
+                        var secs = counter.end;
+                        var mins = Math.floor(secs / 60);
+                        secs -= mins * 60;
+
+                        counter.min.innerHTML = mins;
+                        counter.sec.innerHTML = secs;
+                    }, 1000);
+                }
+            });
+        }
+    </script>
     <div class="title">
-    <h1>Brownies</h1>
+        <h1>Brownies</h1>
     </div>
     <section>
         <nav>
-            <a class="button button-back" href="./index.html" style="text-align: left;"><img src="./Pictures/Brand.png" height="auto" width="30%"></a>
+            <a class="button button-back" href="./index.html" style="text-align: left;"><img src="./Pictures/Brand.png"
+                    height="auto" width="30%"></a>
             <h3>Ingredients:</h3>
             <ul class="ingredients">
                 <li>½ Cup Butter</li>
@@ -28,7 +60,7 @@
         </nav>
         <article>
             <h1><strong>Preparation:</strong> 20 Minutes</h1>
-            <h1><strong>Cook Time:</strong> 45 Minuites</h1> 
+            <h1><strong>Cook Time:</strong> 45 Minuites</h1>
             <h1><strong>Total Time:</strong> 1 hour, 10 Minutes</h1>
         </article>
     </section>
@@ -40,14 +72,27 @@
             <li>Mix in Eggs and Vanilla Extract, until just combined.</li>
             <li>On low speed beat in Coca Powder, Flour, Salt and Baking Powder until smooth.</li>
             <li>Cook for 25-30 minutes. Leave to cool.</li>
+            <li><button onclick="Timer()">Start Timer</button></li>
         </ol>
+        <div class="countdown">
+            <h1 class="header">TIMER PRESS START</h1>
+            <div class="square">
+              <div class="digits" id="cd-min">00</div>
+              <div class="text">MINUTES</div>
+            </div>
+            <div class="square">
+              <div class="digits" id="cd-sec">00</div>
+              <div class="text">SECONDS</div>
+            </div>
+          </div>
     </div>
     <div class="tips">
         <h3>Tips:</h3>
-            <ul>
-                <li>Very Usefull Tip</li>
-            </ul>
+        <ul>
+            <li>Very Usefull Tip</li>
+        </ul>
     </div>
 </body>
 <footer>The End Of The Recipie - Created by Dillon Hunt 2020</footer>
+
 </html>
