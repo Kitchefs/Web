@@ -24,23 +24,25 @@ let ticker;
 const duration2 = document.getElementById("cd-duration2").innerHTML * 60;
 let ticker2;
 
+
 function ResetTimer() {
     clearInterval(ticker)
-    time = duration/60;
+    time = duration / 60;
     document.getElementById("cd-min").innerHTML = time;
     document.getElementById("cd-sec").innerHTML = 0;
 }
 
 function ResetTimer2() {
     clearInterval(ticker2)
-    time2 = duration2/60;
+    time2 = duration2 / 60;
     document.getElementById("cd-min2").innerHTML = time2;
     document.getElementById("cd-sec2").innerHTML = 0;
 }
 
 function CookTimer() {
     ResetTimer();
-
+    const duration = document.getElementById("cd-duration").innerHTML * 60;
+    let ticker;
     let min = document.getElementById("cd-min");
     let sec = document.getElementById("cd-sec");
 
@@ -72,7 +74,8 @@ function CookTimer() {
 
 function CookTimer2() {
     ResetTimer2();
-
+    const duration2 = document.getElementById("cd-duration2").innerHTML * 60;
+    let ticker2;
     let min2 = document.getElementById("cd-min2");
     let sec2 = document.getElementById("cd-sec2");
 
