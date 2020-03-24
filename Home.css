@@ -56,6 +56,20 @@ a {
     color: #ddd;
   }
 
+  .timer {
+    background: linear-gradient(blue, red);
+    border: none;
+    color: none;
+    padding: 1px 1px;
+    text-align: center;
+    border-radius: 3px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 2px 2px;
+    cursor: pointer;
+  }
+
 .Search-Box {
   border-radius: 20px;
   outline: none;
