@@ -21,12 +21,21 @@ function SearchRecipie() {
 
 const duration = document.getElementById("cd-duration").innerHTML * 60;
 let ticker;
+const duration2 = document.getElementById("cd-duration2").innerHTML * 60;
+let ticker2;
 
 function ResetTimer() {
     clearInterval(ticker)
     time = duration/60;
     document.getElementById("cd-min").innerHTML = time;
     document.getElementById("cd-sec").innerHTML = 0;
+}
+
+function ResetTimer2() {
+    clearInterval(ticker2)
+    time2 = duration2/60;
+    document.getElementById("cd-min2").innerHTML = time2;
+    document.getElementById("cd-sec2").innerHTML = 0;
 }
 
 function CookTimer() {
@@ -54,6 +63,38 @@ function CookTimer() {
         sec.innerHTML = secs;
 
         if (time <= 0) {
+            var audio = new Audio('./Pictures/Timer.wav');
+            audio.play();
+            ResetTimer();
+        }
+    }, 1000);
+}
+
+function CookTimer2() {
+    ResetTimer2();
+
+    let min2 = document.getElementById("cd-min2");
+    let sec2 = document.getElementById("cd-sec2");
+
+    let time2 = duration2;
+    let secs2 = time2;
+    let mins2 = Math.floor(secs2 / 60);
+    secs2 -= mins2 * 60;
+
+    min2.innerHTML = mins2;
+    sec2.innerHTML = (secs2 == 0 ? "00" : secs2);
+
+    ticker2 = setInterval(function () {
+        time2--;
+
+        let secs2 = time2;
+        let mins2 = Math.floor(secs2 / 60);
+        secs2 -= mins2 * 60;
+
+        min2.innerHTML = mins2;
+        sec2.innerHTML = secs2;
+
+        if (time2 <= 0) {
             var audio = new Audio('./Pictures/Timer.wav');
             audio.play();
             ResetTimer();
