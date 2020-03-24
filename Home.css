@@ -70,6 +70,10 @@ a {
     cursor: pointer;
   }
 
+  .tab {
+      color: seashell !important;
+  }
+
 .Search-Box {
   border-radius: 20px;
   outline: none;
