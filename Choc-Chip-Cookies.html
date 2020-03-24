@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="https://indestructibletype.com/fonts/Jost.css" type="text/css" charset="utf-8" />
     <script defer src="./Main.js"></script>
     <link rel="stylesheet" href="./odometer-theme-default.css" />
+    <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script defer src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
     <script src="./odometer.min.js"></script>
     <link rel="stylesheet" href="./Home.css" type="text/css">
     <link rel="apple-touch-icon" sizes="180x180" href="./Pictures/apple-touch-icon.png">
@@ -35,13 +38,131 @@
                 <li>&frac34; Cup Milk Chocolate Choc-Chips</li>
             </ul>
         </nav>
-        <article>
-            <h1><strong>Makes:</strong> 25</h1>
-            <h1><strong>Preparation:</strong> 15</h1>
-            <h1><strong>Cook Time:</strong> 15</h1>
-            <h1><strong>Total Time:</strong> 35</h1>
+        <article style="padding-top: 20px;">
+            <h3 style="font-size: small;"><strong>Makes:</strong> 25</h3>
+            <h3 style="font-size: small;"><strong>Preparation:</strong> 15</h3>
+            <h3 style="font-size: small;"><strong>Cook Time:</strong> 15</h3>
+            <h3 style="font-size: small;"><strong>Total Time:</strong> 35</h3>
+            <h3><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                Conversion
+              </button></h3>
         </article>
     </section>
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                <div class="title">
+                    <h1>Conversion</h1>
+                </div>
+                <div class="method">
+                    <div class="bs-example" data-example-id="simple-table">
+                        <table class="table table-striped tab">
+                          <thead>
+                            <tr>
+                              <th>Metric Cups</th>
+                              <th>Milliliters</th>
+                              <th>Tablespoons</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>8 cups</td>
+                              <td>1895 ml</td>
+                              <td>128 Tbs</td>
+                            </tr>
+                            <tr>
+                              <td>4 Cups</td>
+                              <td>960 ml</td>
+                              <td>64 Tbs</td>
+                            </tr>
+                            <tr>
+                              <td>1 Cup</td>
+                              <td>250 ml</td>
+                              <td>16 Tbs</td>
+                            </tr>
+                            <tr>
+                              <td>&frac34; Cup</td>
+                              <td>177 ml</td>
+                              <td>12 Tbs</td>
+                            </tr>
+                            <tr>
+                              <td>&frac23; Cup</td>
+                              <td>158 ml</td>
+                              <td>11 Tbs</td>
+                            </tr>
+                            <tr>
+                              <td>&frac12; Cup</td>
+                              <td>118 ml</td>
+                              <td>8 Tbs</td>
+                            </tr>
+                            <tr>
+                              <td>&frac13; Cup</td>
+                              <td>79 ml</td>
+                              <td>5.5 Tbs</td>
+                            </tr>
+                            <tr>
+                              <td>&frac14; Cup</td>
+                              <td>59 ml</td>
+                              <td>4 Tbs</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div class="bs-example" data-example-id="simple-table" style="padding-top: 50px;">
+                        <table class="table table-striped tab">
+                          <thead>
+                            <tr>
+                              <th>&deg;C</th>
+                              <th>&deg;F</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>150&deg;C</td>
+                              <td>300&deg;F</td>
+                            </tr>
+                            <tr>
+                              <td>160&deg;C/td>
+                              <td>326&deg;F</td>
+                            </tr>
+                            <tr>
+                              <td>180&deg;C</td>
+                              <td>350&deg;F</td>
+                            </tr>
+                            <tr>
+                              <td>190&deg;C</td>
+                              <td>375&deg;F</td>
+                            </tr>
+                            <tr>
+                              <td>200&deg;C</td>
+                              <td>400&deg;F</td>
+                            </tr>
+                            <tr>
+                              <td>220&deg;C</td>
+                              <td>425&deg;F</td>
+                            </tr>
+                            <tr>
+                              <td>230&deg;C</td>
+                              <td>450&deg;F</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
     <div class="method">
         <h3>Method:</h3>
         <ol>
