@@ -56,8 +56,8 @@ a {
     color: #ddd;
   }
 
-  .timer {
-    background: linear-gradient(blue, red);
+  .Timer {
+    background-image: linear-gradient(to right, rgb(179, 0, 0), rgb(245, 6, 10)) !important;
     border: none;
     color: none;
     padding: 1px 1px;
