@@ -54,7 +54,7 @@ function CookTimer() {
         sec.innerHTML = secs;
 
         if (time <= 0) {
-            var audio = new Audio('/Pictures/Timer.wav');
+            var audio = new Audio('./Pictures/Timer.mp3');
             audio.play();
             ResetTimer();
             return;
