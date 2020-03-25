@@ -3,7 +3,7 @@ body {
     color: #ffffff;
     text-align: left;
     font-family: "Jost", "Futura", "Noto", "Ubuntu", sans-serif;
-    padding-top: 100px;
+    padding-top: 10px;
     
 }
 
@@ -104,6 +104,10 @@ a {
     text-align: center;
     padding-top: 10px;
     z-index: 1 !important;
+}
+
+.title:hover {
+ color: #7a7a7a;   
 }
 
 .recipies {
