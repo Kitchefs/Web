@@ -31,7 +31,9 @@ function ResetTimer() {
 }
 
 function CookTimer() {
+    soundEffect.src = './Pictures/Timer.mp3';
     soundEffect.play();
+    soundEffect.pause();
     ResetTimer();
 
     let time = duration;
@@ -55,10 +57,10 @@ function CookTimer() {
         sec.innerHTML = secs;
 
         if (time <= 0) {
-            soundEffect.src = './Pictures/Timer.mp3';
             soundEffect.play();
             ResetTimer();
             return;
         }
     }, 1000);
 }
+
