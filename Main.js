@@ -19,7 +19,7 @@ function SearchRecipie() {
     }
 }
 
-
+const soundEffect = new Audio();
 let duration = document.getElementById("cd-duration").innerHTML * 60;
 let ticker;
 
@@ -31,6 +31,7 @@ function ResetTimer() {
 }
 
 function CookTimer() {
+    soundEffect.play();
     ResetTimer();
 
     let time = duration;
@@ -54,8 +55,8 @@ function CookTimer() {
         sec.innerHTML = secs;
 
         if (time <= 0) {
-            var audio = new Audio('./Pictures/Timer.mp3');
-            audio.play();
+            soundEffect.src = './Pictures/Timer.mp3';
+            soundEffect.play();
             ResetTimer();
             return;
         }
