@@ -23,6 +23,11 @@ const soundEffect = new Audio();
 let duration = document.getElementById("cd-duration").innerHTML * 60;
 let ticker;
 
+function enableNoSleep() {
+  noSleep.enable();
+  document.removeEventListener('touchstart', enableNoSleep, false);
+}
+
 function ResetTimer() {
     document.getElementById("cd-min").innerHTML = 0;
     document.getElementById("cd-sec").innerHTML = 0;
@@ -63,4 +68,5 @@ function CookTimer() {
         }
     }, 1000);
 }
+
 

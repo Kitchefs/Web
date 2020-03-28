@@ -192,9 +192,31 @@
     <div class="tips">
         <h3>Tips:</h3>
         <ul>
-            <li>Very Usefull Tip</li>
+            <li>
+              <input type="button" id="toggle" value="Press Here Before Using Timer" /></li>
         </ul>
     </div>
+    <script src="./js/NoSleep.js"></script>
+
+
+    <script>
+      var noSleep = new NoSleep();
+
+      var wakeLockEnabled = false;
+      var toggleEl = document.querySelector("#toggle");
+      toggleEl.addEventListener('click', function() {
+        if (!wakeLockEnabled) {
+          noSleep.enable();
+          wakeLockEnabled = true;
+          toggleEl.value = "You Can Now Use The Timer";
+        } else {
+          noSleep.disable();
+          wakeLockEnabled = false;
+          toggleEl.value = "Press Here Before Using Timer";
+          document.body.style.backgroundColor = "";
+        }
+      }, false);
+    </script>
 </body>
 <footer>The End Of The Recipie - Created by Dillon Hunt 2020</footer>
 
