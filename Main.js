@@ -64,6 +64,7 @@ function CookTimer() {
         if (time <= 0) {
             soundEffect.play();
             ResetTimer();
+            soundEffect.play();
             return;
         }
     }, 1000);

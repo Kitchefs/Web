@@ -10,6 +10,7 @@
     <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script defer src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    
     <script src="./odometer.min.js"></script>
     <link rel="stylesheet" href="./Home.css" type="text/css">
     <link rel="apple-touch-icon" sizes="180x180" href="./Pictures/apple-touch-icon.png">
@@ -23,7 +24,7 @@
     <div class="title">
         <h1>Choc-Chip Cookies</h1>
     </div>
-    <section>
+    <section class="print">
         <nav>
             <a class="button button-back" href="./index.html" style="text-align: left;"><img src="./Pictures/Brand.png"
                     height="auto" width="30%"></a>
@@ -38,7 +39,8 @@
                 <li>&frac34; Cup Milk Chocolate Choc-Chips</li>
             </ul>
         </nav>
-        <article style="padding-top: 20px;">
+        <article style="padding-top: 20px;" class="print" onclick="window.print();return false;">
+            <h1 style="font-size: small;" class=""><button class="btn-primary" style="border-radius: 20px;"><strong>Print</strong></button></h1>
             <h1 style="font-size: small;"><strong>Makes:</strong> 25</h1>
             <h1 style="font-size: small;"><strong>Preparation:</strong> 15</h1>
             <h1 style="font-size: small;"><strong>Cook Time:</strong> 15</h1>
@@ -163,7 +165,7 @@
           </div>
         </div>
       </div>
-    <div class="method">
+    <div class="method print">
         <h3>Method:</h3>
         <ol>
             <li>Line baking tray, preheat Oven to 160&deg;C.</li>
@@ -189,8 +191,7 @@
     <div class="tips">
         <h3>Tips:</h3>
         <ul>
-            <li>
-              <input type="button" id="toggle" class="btn"  value="Press Here Before Using Timer" /></li>
+            <li><input type="button" id="toggle" class="btn "  value="Press Here Before Using Timer" /></li>
         </ul>
     </div>
     <script src="./js/NoSleep.js"></script>
@@ -215,6 +216,6 @@
       }, false);
     </script>
 </body>
-<footer>The End Of The Recipie - Created by Dillon Hunt 2020</footer>
+<footer class="print">The End Of The Recipie - Created by Dillon Hunt 2020</footer>
 
 </html>

@@ -4,8 +4,12 @@ body {
     text-align: left;
     font-family: "Jost", "Futura", "Noto", "Ubuntu", sans-serif;
     padding-top: 10px;
-    
-}
+    visibility:hidden;
+    }
+
+.print {
+    visibility:visible;
+    }
 
 a {
     text-decoration: none !important;
@@ -139,6 +143,7 @@ a {
     text-align: center;
     color: gray !important;
   }
+
 .button {
     background-color: none;
     border: none;

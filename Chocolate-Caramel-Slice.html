@@ -9,6 +9,7 @@
     <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script defer src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+
     <script src="./odometer.min.js"></script>
     <link rel="stylesheet" href="./Home.css" type="text/css">
     <link rel="apple-touch-icon" sizes="180x180" href="./Pictures/apple-touch-icon.png">
@@ -38,7 +39,9 @@
                 <li>1 Tbsp Vegtable Oil</li>
             </ul>
         </nav>
-        <article style="padding-top: 20px;">
+        
+        <article style="padding-top: 20px;" class="print" onclick="window.print();return false;">
+            <h1 style="font-size: small;" class=""><button class="btn-primary" style="border-radius: 20px;"><strong>Print</strong></button></h1>
             <h1 style="font-size: small;"><strong>Makes:</strong> Amount</h1>
             <h1 style="font-size: small;"><strong>Preparation:</strong> 30 minutes</h1>
             <h1 style="font-size: small;"><strong>Cook Time:</strong> 45 minutes</h1> 
@@ -163,7 +166,7 @@
           </div>
         </div>
       </div>
-    <div class="method">
+    <div class="method print">
         <h3>Method:</h3>
         <ol>
             <li>Line a 20cm x 10cm tray, preheat oven to 180&deg;C.</li>
@@ -174,7 +177,7 @@
             <li>Pour over base. Bake For 20-25 minutes or until golden. Leave to cool</li>
             <li>Combine Chocolate and Oil, stir until smooth, pour evenly over slice. Refrigerate for 5-6 hours.</li>
     </ol>
-    <div class="countdown">
+    <div class="countdown ">
         <h1 class="header"><a href="javascript:CookTimer()">Start Timer</a></h1>
         <p>Click on the number bellow to change the time if desired, then click the text on the first tip then press 'Start Timer' to start.</p>
         <h2 id="cd-duration" contenteditable="true">20</h2>
@@ -191,7 +194,7 @@
         <h3>Tips:</h3>
         <ul>
             <li>
-              <input type="button" id="toggle" class="btn"  value="Press Here Before Using Timer" /></li>
+              <input type="button" id="toggle" class="btn "  value="Press Here Before Using Timer" /></li>
         </ul>
     </div>
     <script src="./js/NoSleep.js"></script>
@@ -216,5 +219,5 @@
       }, false);
     </script>
 </body>
-<footer>The End Of The Recipie - Created by Dillon Hunt 2020</footer>
+<footer class="print">The End Of The Recipie - Created by Dillon Hunt 2020</footer>
 </html>
