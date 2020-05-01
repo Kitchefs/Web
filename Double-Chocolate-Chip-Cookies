@@ -17,35 +17,37 @@
     <link rel="icon" type="image/png" sizes="32x32" href="./Pictures/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./Pictures/favicon-16x16.png">
     <link rel="shortcut icon" href="./Pictures/favicon.ico">
-    <title>Bluberry Muffins</title>
+    <title>Double Choc-Chip Cookies</title>
 </head>
 
 <body>
     <div class="title">
-        <h1>Bluberry Muffins</h1>
+        <h1>Double Choc-Chip Cookies</h1>
     </div>
     <section>
         <nav>
             <a class="button button-back" href="./index.html" style="text-align: left;"><img src="./Pictures/Brand.png" height="auto" width="30%"></a>
             <h3>Ingredients:</h3>
             <ul class="ingredients">
-                <li>1 &frac12; Cups Plain Flour</li>
-                <li>&frac34; Caster Sugar</li>
-                <li>&frac14; Tsp Salt</li>
-                <li>&frac13; Cup Vegtable Oil</li>
-                <li>1 Egg</li>
-                <li>&frac12; Cup Milk</li>
-                <li>1 Tsp Vanilla Extract</li>
-                <li>1 Cup Frozen Bluberrys</li>
+                <li>60g Butter</li>
+                <li>&frac23; Cups Brown Sugar</li>
+                <li>2 Tsp Vanilla Extract</li>
+                <li>2 Egg Yolks</li>
+                <li>2 Tbsp Glucose Syrup</li>
+                <li>1 Cup Plain Flour</li>
+                <li>&frac12; Tsp Baking Powder</li>
+                <li>&frac14; Cup Cocoa Powder</li>
+                <li>&frac34; Cup White Chocloat Chips</li>
+                <li>&frac12; Cup Dark Chocolate</li>
             </ul>
         </nav>
         
         <article style="padding-top: 20px;" class="print">
             <h1 style="font-size: small;" class=""><button class="btn-primary" onclick="window.print();return false;" style="border-radius: 20px;"><strong>Print</strong></button></h1>
             <h1 style="font-size: small;"><strong>Makes:</strong> 8</h1>
-            <h1 style="font-size: small;"><strong>Preparation:</strong> 15</h1>
-            <h1 style="font-size: small;"><strong>Cook Time:</strong> 20</h1> 
-            <h1 style="font-size: small;"><strong>Total Time:</strong> 35</h1>
+            <h1 style="font-size: small;"><strong>Preparation:</strong> 15 minutes</h1>
+            <h1 style="font-size: small;"><strong>Cook Time:</strong> 12 minutes</h1> 
+            <h1 style="font-size: small;"><strong>Total Time:</strong> 27 minutes</h1>
             <h1><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
                 Conversion
               </button></h3>
@@ -169,17 +171,20 @@
     <div class="method print">
         <h3>Method:</h3>
         <ol>
-            <li>Line Muffin Tray with Paper Liners, preheat oven to 200&deg;C.</li>
-            <li>In a large bowl mix Flour, Sugar, Baking Powder and Salt.</li>
-            <li>Add in Oil, Egg, Vanilla and Milk until just combined.</li>
-            <li>Fold in Bluberrys.</li>
-            <li>Devide into Muffin Cups.</li>
-            <li>Bake for 15-20 minuntes. Leave to cool.</li>
+            <li>Preheat oven to 180&deg;C. Line baking tray.</li>
+            <li>In a medium bowl cream Butter.</li>
+            <li>Add in Sugar, beat until light and fluffy.</li>
+            <li>Add Egg Yolks, Vanilla and Glucose.</li>
+            <li>Add Flour and Cocoa Powder, Stir with a wooden spoon.</li>
+            <li>Stir in Chocolate until combined.</li>
+            <li>Roll 8 balls and flatten until 1cm thick</li>
+            <li>Bake For 10-12 minutes, Leave to cool.</li>
+
     </ol>
     <div class="countdown ">
         <h1 class="header"><a href="javascript:CookTimer()">Start Timer</a></h1>
         <p>Click on the number bellow to change the time if desired, then click the text on the first tip then press 'Start Timer' to start.</p>
-        <h2 id="cd-duration" contenteditable="true">15</h2>
+        <h2 id="cd-duration" contenteditable="true">0</h2>
         <div class="square">
           <div class="digits odometer" id="cd-min" >0</div>
           <div class="text">MINUTES</div>
@@ -189,7 +194,6 @@
           <div class="text">SECONDS</div>
         </div>
       </div>
-</div>
         <div class="tips">
         <h3>Tips:</h3>
         <ul>

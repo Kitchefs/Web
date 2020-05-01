@@ -1,7 +1,0 @@
-#grades_summary th.title .context {
-    visibility: visible;
-}
-
-#grades_summary tr.group_total td, #grades_summary tr.group_total th[scope=row] {
-    background-color: whitesmoke;
-}
