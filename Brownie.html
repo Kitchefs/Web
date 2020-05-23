@@ -177,8 +177,8 @@
             <li>Cook for 25-30 minutes. Leave to cool.</li>
     </ol>
     <div class="countdown ">
-        <h1 class="header"><a href="javascript:CookTimer()">Start Timer</a></h1>
-        <p>Click on the number bellow to change the time if desired, then click the text on the first tip then press 'Start Timer' to start.</p>
+        <h1 class="header"><input type="button" onclick="CookTimer()" id="toggle" class="btn"  value="Press To Start Timer"/></h1>
+        <p>Click On The Number Bellow To Change How Long The Timer Goes For.</p>
         <h2 id="cd-duration" contenteditable="true">25</h2>
         <div class="square">
           <div class="digits odometer" id="cd-min" >0</div>
@@ -189,14 +189,16 @@
           <div class="text">SECONDS</div>
         </div>
       </div>
+</div>
     <div class="tips">
         <h3>Tips:</h3>
         <ul>
             <li>
-              <input type="button" id="toggle" class="btn "  value="Press Here Before Using Timer" /></li>
-        </ul>
+            </li>
+            </ul>
     </div>
     <script src="./js/NoSleep.js"></script>
+    <script src="./Main.js"></script>
 
 
     <script>
@@ -208,11 +210,11 @@
         if (!wakeLockEnabled) {
           noSleep.enable();
           wakeLockEnabled = true;
-          toggleEl.value = "You Can Now Use The Timer";
+          toggleEl.value = "Timer Started, Press To Reset";
         } else {
           noSleep.disable();
           wakeLockEnabled = false;
-          toggleEl.value = "Press Here Before Using Timer";
+          toggleEl.value = "Press To Start Timer";
           document.body.style.backgroundColor = "";
         }
       }, false);
