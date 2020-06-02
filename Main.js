@@ -1,9 +1,29 @@
+
 function RecipeNamesEqual(x, y) {
     x = x.toLowerCase();
     y = y.toLowerCase();
     x = x.replace(/\s/g, '');
     y = y.replace(/\s/g, '');
     return x.includes(y) || y.includes(x) || x == "" || y == "";
+}
+
+function RandRecipe() {
+    // Hide all recipes
+    let recipies = document.getElementsByClassName("recipies");
+    for (recipie of recipies) {
+        recipie.style.display = "none";
+    }
+
+    // Show one randomly selected recipe
+    let selected = Math.floor(Math.random() * recipies.length);
+    recipies.item(selected).style.display = "inline-block";
+}
+
+function BackRecipe() {
+    let recipies = document.getElementsByClassName("recipies");
+    for (recipie of recipies) {
+        recipie.style.display = "inline-block";
+    }
 }
 
 function SearchRecipe() {
