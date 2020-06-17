@@ -7,14 +7,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-168184820-1"></script>
-  <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-168184820-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
 
-  gtag('config', 'UA-168184820-1');
-</script>
+        gtag('config', 'UA-168184820-1');
+    </script>
     <link rel="stylesheet" href="https://indestructibletype.com/fonts/Jost.css" type="text/css" charset="utf-8" />
     <link rel="stylesheet" href="./Home.css" type="text/css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
@@ -38,8 +38,8 @@
         <h1><img src="./Pictures/Brand.png" height="auto" width="20%">
             <a href="./Substitution-Guide.html" class="title"
                 style="padding-top: 30px; font-size: x-small; outline-width: 5px;">- Substitutions Guide Here -</a></h1>
-        <input type="text" style="font-size: xx-small;" id="Search-Box" onkeyup="SearchRecipe()"
-            onload="SearchRecipe()" placeholder="Search Recipes" class="Search-Box"></input>
+        <input type="text" style="font-size: xx-small;" id="Search-Box" onkeyup="SearchRecipe()" onload="SearchRecipe()"
+            placeholder="Search Recipes" class="Search-Box"></input>
     </div>
     <div id="Slideshow" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
@@ -105,7 +105,7 @@
             </a>
         </div>
 
-        <div class="recipies" id="12NachosTacosGuacamoleSalsa" style="background-color: rgb(86, 86, 86);"> 
+        <div class="recipies" id="12NachosTacosGuacamoleSalsa" style="background-color: rgb(86, 86, 86);">
             <a href="./Nachos.html">
                 <img src="./Pictures/Nachos.JPG" alt="Nachos" width="24%" height="80%">
                 <div class="desc">
@@ -115,14 +115,23 @@
             </a>
         </div>
 
-        <div class="recipies" id="1BluberryMuffinsHealthyCupcakes"> 
-        <a href="./Bluberry-Muffins.html">
-            <img src="./Pictures/Bluberry-Muffin.jpg" alt="Bluberry Muffins" width="24%" height="80%">
-            <div class="desc">
-                <p>Blueberry Muffins</p>
-            </div>
-        </a>
-    </div>
+        <div class="recipies" id="13GuacamoleSalsaNachosTacosDip">
+            <a href="./Guacamole.html"></a>
+                <img src="./Pictures/Guacamole.JPG" alt="Guacamole" width="24%" height="80%">
+                <div class="desc">
+                    <p>Guacamole</p>
+                </div>
+            </a>
+        </div>
+
+        <div class="recipies" id="1BluberryMuffinsHealthyCupcakes">
+            <a href="./Bluberry-Muffins.html">
+                <img src="./Pictures/Bluberry-Muffin.jpg" alt="Bluberry Muffins" width="24%" height="80%">
+                <div class="desc">
+                    <p>Blueberry Muffins</p>
+                </div>
+            </a>
+        </div>
 
         <div class="recipies" id="2PavlovaSweeteggglutenfree">
             <a href="Pavlova.html">
@@ -215,12 +224,15 @@
         </a>
     </div>
     <div class="randomRecipe rand" onclick="RandRecipe()">
-            <p style="text-align: center;"><br>Still Can't Decide?<br>No Way.<br>But just in case!<br>Click here to select a random recipe</p>
+        <p style="text-align: center;"><br>Still Can't Decide?<br>No Way.<br>But just in case!<br>Click here to select a
+            random recipe</p>
     </div>
     <div class="randomRecipe back" onclick="BackRecipe()">
         <p style="text-align: center;"><br>Show All Recipes</p>
-</div>
+    </div>
 
-<script src="./Main.js"></script> <!--style="background-color: rgb(46, 46, 46); border-radius: 5px; border-color: rgb(46, 46, 46);"-->
+    <script src="./Main.js"></script>
+    <!--style="background-color: rgb(46, 46, 46); border-radius: 5px; border-color: rgb(46, 46, 46);"-->
 </body>
+
 </html>
