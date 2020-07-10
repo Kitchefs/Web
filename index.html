@@ -29,10 +29,9 @@
     <link rel="shortcut icon" href="./Pictures/favicon.ico">
     <title>Home</title>
 
-</head>
-
 <div id="loader"></div>
-<body style="display:none;" id="myDiv">
+</head>
+<body onload="myFunction()" style="margin:0;" style="display:none;" id="myDiv" class="animate-bottom">
 
     <div class="title">
         <p>Kitchefs.Github.io</p>
@@ -234,9 +233,5 @@
 
     <script src="./Main.js"></script>
     <!--style="background-color: rgb(46, 46, 46); border-radius: 5px; border-color: rgb(46, 46, 46);"-->
-function showPage() {
-  document.getElementById("loader").style.display = "none";
-  document.getElementById("body").style.display = "block";
-}
 
 </html>
