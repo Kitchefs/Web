@@ -27,7 +27,8 @@
     <link rel="shortcut icon" href="./Pictures/favicon.ico">
     <title>Pizza Scroll</title>
 </head>
-<body>
+<div id="loader"></div>
+<body style="display:none;" id="myDiv">
     <div class="title">
     <h1>Pizza Scroll</h1>
     </div>
@@ -227,7 +228,10 @@
         }
       }, false);
     </script>
-</body>
+function showPage() {
+  document.getElementById("loader").style.display = "none";
+  document.getElementById("body").style.display = "block";
+}
 <footer class="print">The End Of The Recipe - Created by Dillon Hunt 2020</footer>
 
 </html>

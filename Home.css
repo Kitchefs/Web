@@ -7,6 +7,9 @@ body {
     visibility:visible;
     }
 
+ #myDiv {
+    display: none;
+}
 .print {
     visibility:visible;
     }
@@ -108,6 +111,14 @@ a {
     text-align: center;
     padding-top: 10px;
     z-index: 1 !important;
+}
+
+#loader{
+	position: fixed;
+	width: 100%;
+	height: 100vh;
+	background: url("./Pictures/Preload.gif") no-repeat center;
+	z-index: 999;
 }
 
 .title:hover {

@@ -17,7 +17,11 @@
     <link rel="stylesheet" href="./Home.css" type="text/css">
     <title>*SIGH*</title>
 </head>
-<body>
+<div id="loader"></div>
+<body style="display:none;" id="myDiv">
     <h1 style="align-content: center;">Really?</h1>
-</body>
+function showPage() {
+  document.getElementById("loader").style.display = "none";
+  document.getElementById("body").style.display = "block";
+}
 </html>

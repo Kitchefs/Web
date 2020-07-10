@@ -16,10 +16,14 @@
     <link rel="stylesheet" href="./Home.css" type="text/css">
     <title>404</title>
 </head>
-<body>
+<div id="loader"></div>
+<body style="display:none;" id="myDiv">
     <div class="title">
     <h1>Error 404</h1>
     <h3><br>Now That's An Error!</h3>
     </div>
-</body>
+function showPage() {
+  document.getElementById("loader").style.display = "none";
+  document.getElementById("body").style.display = "block";
+}
 </html>

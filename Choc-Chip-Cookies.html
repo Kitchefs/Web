@@ -28,8 +28,9 @@
     <link rel="shortcut icon" href="./Pictures/favicon.ico">
     <title>Choc-Chip Cookies</title>
 </head>
+<div id="loader"></div>
+<body style="display:none;" id="myDiv">
 
-<body>
     <div class="title">
         <h1>Choc-Chip Cookies</h1>
     </div>
@@ -227,7 +228,16 @@
         }
       }, false);
     </script>
-</body>
-<footer class="print">The End Of The Recipe - Created by Cadbury Kitchen 2016</footer>
+function showPage() {
+  document.getElementById("loader").style.display = "none";
+  document.getElementById("body").style.display = "block";
+}
+<footer class="print">The End Of The Recipe - Created by Dillon Hunt 2019</footer>
 
 </html>
+var myVar;
+
+function myFunction() {
+  myVar = setTimeout(showPage, 3000);
+}
+

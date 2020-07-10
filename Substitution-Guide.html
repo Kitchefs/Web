@@ -31,7 +31,8 @@
     <title>Substitution</title>
 </head>
 
-<body>
+<div id="loader"></div>
+<body style="display:none;" id="myDiv">
     <div class="title">
         <a href="./index.html">Substitution</a>
     </div>
@@ -131,7 +132,10 @@
           </div>
 </div>
     </div>
-</body>
+function showPage() {
+  document.getElementById("loader").style.display = "none";
+  document.getElementById("body").style.display = "block";
+}
 <footer class="print">The End Of The Page - Created by Dillon Hunt 2020</footer>
 
 </html>

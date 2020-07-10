@@ -31,7 +31,8 @@
 
 </head>
 
-<body>
+<div id="loader"></div>
+<body style="display:none;" id="myDiv">
 
     <div class="title">
         <p>Kitchefs.Github.io</p>
@@ -233,6 +234,9 @@
 
     <script src="./Main.js"></script>
     <!--style="background-color: rgb(46, 46, 46); border-radius: 5px; border-color: rgb(46, 46, 46);"-->
-</body>
+function showPage() {
+  document.getElementById("loader").style.display = "none";
+  document.getElementById("body").style.display = "block";
+}
 
 </html>
